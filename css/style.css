@@ -52,7 +52,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', end
 h1 {
 	padding-left: 30px;
 	font-family: 'Berkshire Swash', cursive; /*フォントの種類指定(googleのwebフォント)*/
-	font-size: 3em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-size: 2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	line-height: 70px; /*行の高さ指定(数値のみの場合はfont-sizeの倍数)*/
 	height: 70px; /*領域の高さ指定*/
 }
