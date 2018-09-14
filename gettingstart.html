@@ -200,7 +200,7 @@ class SampleBot:
           unique_id = str(int(time.mktime(update.message["date"].timetuple()))) + u":" + str(update.message.from_user.id) + u":" + bot.username
 
           update.message.reply_text(u"_FINISHED_:" + unique_id)
-          update.message.reply_text(u"対話終了です．上にある /starからこの行までをコピーして，「対話ログ」覧に貼り付けてください")
+          update.message.reply_text(u"対話終了です．上にある /startからこの行までをコピーして，「対話ログ」覧に貼り付けてください")
 
 
   def run(self):
