@@ -17,9 +17,10 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+<link rel="stylesheet" href="css/prettify.css" type="text/css">
 </head>
 
-<body>
+<body onload="prettyPrint()">
 <noscript>
 <p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
 </noscript>
@@ -96,24 +97,26 @@
 
     <!--ページのメイン部分-->
     <article>
+
+      <h2>満たすべきシステムの仕様</h2>
+      <hr size="7" width="30%" color="#3f4c6b">
       <section>
-        <h3>ご不明点などございましたら，下記のMLまでお問い合わせください．</h3>
-        <h3>dialog-system-live-competition-ml[at]googlegroups.com</h3>
+        <ol>
+          <li>評価の観点から，対話システムは以下の仕様を満たすように作成してください．</li>
+          <li>※<a href="gettingstart.html"><font color="red">Getting Started</font></a>で使用している<a href="samplebot7.py"><font color="red">samplebot7.py</font></a>では，これらを満たすように実装されています．</li>
+        </ol>
+        <br/>
+        <li>16発話以上システム発話が継続するようにしてください．<br/>
+         　 ※オーガナイザが判断した場合は，より長い対話とする可能性もあります．</li>
+        <li>システム発話はテキストのみとし，絵文字・顔文字・スタンプは不可とします．<br/>
+        　 ユーザからの発話もテキストのみが渡される前提でシステムを用意してください．</li>
+        <li>ユーザからの 15発話目を受け取り，システムが 16発話目を発話した後に，<br/>
+        　 "_FINISHED_:"に続けてユニークIDを発話として出力してください．<br/>
+        　 ユニークIDは "unixtime:ユーザID:ボット名"から生成する文字列とします．<br/>
+        　 unixtime:ユーザIDは IDをユニークにするために，またボット名は対話システムを識別するために用います．</li>
+        <li>ユニークIDを出力後，アノテータへの指示として以下の発話を出力してください．<br/>
+        　 "対話終了です．上にある /startからこの行までをコピーして，「対話ログ」覧に貼り付けてください"</li>
       </section>
-      <!-- <h2>About</h2>
-      <section>
-        <ul>
-          <li> 対話システムシンポジウムから，<a href="https://dbd-challenge.github.io/dbdc3/index.html"/>対話破綻検出チャレンジ</a>は始まりました．
-          <li> 本チャレンジは，昨年度，対話システムシンポジウムを離れ，国際イベントとなりました．
-          <li> 対話破綻検出チャレンジのデータは，対話研究への参入を容易にしたり，現状の対話システムの問題点を明らかにしたりすることに役立ってきたと考えています．
-          <li> しかし，その一方で，固定の対話コーパスに対してアルゴリズムを競う形式であるために，対話のライブ要素があまり検討されてこなかったという問題点もありました．
-          <br/>
-          <li> そこで，このたび，よりライブ性の高いイベントを行うことにより，対話システムにおけるよりリアルな難しさや面白さをシンポジウム参加者全員で共有できるようなイベントを行いたいと考えました．
-          <li> それが「<b>対話システムライブコンペティション（ライブコンペ）</b>」です．
-        </ul>
-      </section> -->
-
-
 
     </article>
 
@@ -137,6 +140,11 @@ setTimeout(function() {
 }, 3000);
 </script>
 <script src="js/scrolltopcontrol.js"></script> <!--スクロールしながらページのトップに戻る-->
+
+<script src="js/prettify.js"></script>
+<script src="js/lang-css.js"></script>
+<!-- prettyPrint()関数を実行するため追加↓ -->
+<!-- <script>prettyPrint();</script> -->
 
 </body>
 </html>

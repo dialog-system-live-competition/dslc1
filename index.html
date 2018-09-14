@@ -52,6 +52,7 @@
   <ul id="js-menu" class="menu">
     <!-- <li class="menu--item"> <a href="news.html" class="menu--link" title="NEWS"> <i class="menu--icon  fa fa-fw fa-pencil-square"></i> <span class="menu--label">NEWS</span> </a> </li> -->
     <li class="menu--item"> <a href="index.html" class="menu--link" title="Home"> <i class="menu--icon  fa fa-fw fa-info-circle"></i> <span class="menu--label">Home</span> </a> </li>
+    <li class="menu--item"> <a href="system.html" class="menu--link" title="Home"> <i class="menu--icon  fa fa-fw fa-info-circle"></i> <span class="menu--label">システム仕様</span> </a> </li>
     <li class="menu--item"> <a href="gettingstart.html" class="menu--link" title="Getting Started"> <i class="menu--icon  fa fa-fw fa-info-circle"></i> <span class="menu--label">Getting Started</span> </a> </li>
     <!-- <li class="menu--item"> <a href="entry.html" class="menu--link" title="Entry"> <i class="menu--icon  fa fa-fw fa-info-circle"></i> <span class="menu--label">エントリ方法</span> </a> </li> -->
     <!-- <li class="menu--item  menu--item__has_sub_menu">
@@ -157,7 +158,8 @@
       <h3><b>開発いただくシステム</b></h3>
       <ul>
       <li> 開発いただくシステムのタイプは，「<b>雑談対話システム（非タスク指向型対話システム）</b>」です．
-      <li>対話システムの作成にあたっては，インスタントメッセージシステム<a href="https://telegram.org/">Telegram</a>上で動作するボットを作成していただきます．
+      <li> 対話システムの作成にあたっては，インスタントメッセージシステム<a href="https://telegram.org/">Telegram</a>上で動作するボットを作成していただきます．
+      <li> 対話システムは，<a href="system.html"><font color="red">システム仕様</font></a>に記載されている要件を満たす必要があります．
       <li>詳しい作成方法については，<a href="gettingstart.html"><font color="red">Getting Started</font></a>をご覧ください．
       </ul>
       </section>
@@ -168,8 +170,14 @@
       <li><a href="https://goo.gl/forms/nhlR90E1xeWSJjpq2"><font color="red">こちらのフォーム</font></a>よりエントリください．
       <li>エントリには，下記の情報が必要です．</li>
       </ul>
-      <li>チーム名（半角英数字のみ使用可）
-      <li>ボットID（半角英数字のみ使用可．Telegramで登録するボットIDはこの名前としてください．）
+      <li>チーム名（半角英数字のみ使用可）</li>
+      <li>telegram ボット名<br/>
+        　 ※BotFatherの「How are we going to call it? Please choose a name for your bot.」に対して入力した値<br/>
+        　 ※半角英数字のみ使用可
+      <li>telegram ボットのusername<br/>
+        　 ※BotFatherの「Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bot.」に対して入力した値<br/>
+        　 ※半角英数字のみ使用可で，最後はbotで終わる名前（例：TetrisBot や tetris_bot
+      </li>
       <li>代表者のお名前
       <li>代表者のメールアドレス
       <li>代表者の所属
