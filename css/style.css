@@ -392,3 +392,14 @@ section {
 	-moz-opacity: 0.5; /*ここまで透明度設定*/
 }
 }
+
+div.linkstr {
+    /* width:90%; */
+    /* height:100%; */
+    margin:0 auto;
+    /* background:#FFFFFF; */
+    /* border-left:#CCCCCC 1px solid; */
+    /* border-right:#CCCCCC 1px solid; */
+    padding:10px 10px 10px 10px;
+}
+
