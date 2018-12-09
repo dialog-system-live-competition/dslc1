@@ -53,6 +53,7 @@ header = <<'HEADER'
     <link href="../css/chart.css" rel="stylesheet">
   </head>
 <body>
+<div class="gcontainer">
 <h1>__system_name__</h1>
 
 <table class="table table-striped table-bordered">

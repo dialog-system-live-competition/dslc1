@@ -1,5 +1,9 @@
 @charset 'utf-8'; /*文字コード指定*/
 
+.gcontainer {
+    padding: 20px 20px 20px 20px; /*ボックス内側の余白*/
+}
+
 .graph {
     position: relative; /* IE is dumb */
     width: 300px;
