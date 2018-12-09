@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>対話システムライブコンペティション</title>
-<meta name="Description" content="対話システムライブコンペティションのページです" />
-<meta name="Keywords" content="対話システムライブコンペティション,対話システムライブコンペ,ライブコンペ,対話システム,対話,雑談" />
-<link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" type="img/x-icon" href="http://saetl.net/favicon.ico" />
-<link rel="stylesheet" href="../css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster' rel='stylesheet' type='text/css'><!--googlewebフォント-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
-<link rel="stylesheet" href="../css/vertical-responsive-menu.css" /><!--レスポンシブメニュー-->
-<link rel="stylesheet" href="../css/twilight.css"><!--スライドショー-->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-</head>
 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>対話システムライブコンペティション</title>
+    <meta name="Description" content="対話システムライブコンペティションのページです" />
+    <meta name="Keywords" content="対話システムライブコンペティション,対話システムライブコンペ,ライブコンペ,対話システム,対話,雑談" />
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster' rel='stylesheet' type='text/css'><!--googlewebフォント-->
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <link href="../css/chart.css" rel="stylesheet">
+  </head>
 <body>
-<div class="floating">
-<table>
-<tr><td></td><td>U</td><td>/start</td></tr>
-<tr><td><font color=red>1</font></td><td><font color=red>zunko</font></td><td><font color=red><b>Tetsuroさん、おはようございます！　　ずん子と申します。ずんだ餅を世界中に広めるため活動しています！最近、料理を勉強しているのですが、あなたの好きな料理はなんですか？</b></font></td></tr>
-<tr><td></td><td>U</td><td>オムライスが好きです</td></tr>
-<tr><td><font color=red>2</font></td><td><font color=red>zunko</font></td><td><font color=red><b>オムライスといったら、洋食ですよね！　オムライスは、調理済みの米飯を鶏卵でオムレツのように包んだ日本の洋食らしいですよ♪</b></font></td></tr>
-<tr><td></td><td>U</td><td>へー和食なんですね、知らなかった</td></tr>
-<tr><td><font color=red>3</font></td><td><font color=red>zunko</font></td><td><font color=red><b>和食といえば、煮切りですよね！　煮切ったものは「煮切りみりん」「煮切り酒」とも呼ばれ、いずれも主に和食で使われらしいですよ♪</b></font></td></tr>
-<tr><td></td><td>U</td><td>そうですね、みりんはアルコールとばさないとですよね</td></tr>
-<tr><td><font color=red>4</font></td><td><font color=red>zunko</font></td><td><font color=red><b>みりんといえば、桜飯って知ってますか？　研いだ米に醤油、塩、酒、みりん、出汁などを加え炊き上げたものらしいですよ♪</b></font></td></tr>
-<tr><td></td><td>U</td><td>初めて知りました。なんで桜ってつくんでしょうね</td></tr>
-<tr><td><font color=red>5</font></td><td><font color=red>zunko</font></td><td><font color=red><b>ましといえば、突然ですが、ここでクイズです！ことわざで、つまらない物でも無いよりはましだ、ということを「何も山の賑わい」というでしょう?</b></font></td></tr>
-<tr><td></td><td>U</td><td>わかりません</td></tr>
-<tr><td><font color=red>6</font></td><td><font color=red>zunko</font></td><td><font color=red><b>正解は〜〜、「枯れ木」です！</b></font></td></tr>
-<tr><td></td><td>U</td><td>へーそうなんだ</td></tr>
-<tr><td><font color=red>7</font></td><td><font color=red>zunko</font></td><td><font color=red><b>カラオケ行こうぜ</b></font></td></tr>
-<tr><td></td><td>U</td><td>えー突然ですね</td></tr>
-<tr><td><font color=red>8</font></td><td><font color=red>zunko</font></td><td><font color=red><b>え、まじで行きたいですよね!何歌うんですか?</b></font></td></tr>
-<tr><td></td><td>U</td><td>私は歌は下手なんです</td></tr>
-<tr><td><font color=red>9</font></td><td><font color=red>zunko</font></td><td><font color=red><b>下手といえば、突然ですが、ここでクイズです！下手にもかかわらず、やみくもに熱心な人を、「下手の何」というでしょう?</b></font></td></tr>
-<tr><td></td><td>U</td><td>うーん、ヒントはありますか</td></tr>
-<tr><td><font color=red>10</font></td><td><font color=red>zunko</font></td><td><font color=red><b>正解は〜〜、「横好き」です！</b></font></td></tr>
-<tr><td></td><td>U</td><td>そうですか</td></tr>
-<tr><td><font color=red>11</font></td><td><font color=red>zunko</font></td><td><font color=red><b>小遣いで土産買ってきますね。</b></font></td></tr>
-<tr><td></td><td>U</td><td>お土産何にするんですか</td></tr>
-<tr><td><font color=red>12</font></td><td><font color=red>zunko</font></td><td><font color=red><b>土産買ってきて。</b></font></td></tr>
-<tr><td></td><td>U</td><td>えー私が買ってくるんですか</td></tr>
-<tr><td><font color=red>13</font></td><td><font color=red>zunko</font></td><td><font color=red><b>私に渡して！...あっ！</b></font></td></tr>
-<tr><td></td><td>U</td><td>どうしたんですか</td></tr>
-<tr><td><font color=red>14</font></td><td><font color=red>zunko</font></td><td><font color=red><b>明日の朝からケーキ買って帰る</b></font></td></tr>
-<tr><td></td><td>U</td><td>私もケーキ好きですよ</td></tr>
-<tr><td><font color=red>15</font></td><td><font color=red>zunko</font></td><td><font color=red><b>ケーキといえば、ミル・クレープですよね！　ミル・クレープは、ケーキの一種らしいですよ♪</b></font></td></tr>
-<tr><td></td><td>U</td><td>そうなんですか、ミルクレープも好きです</td></tr>
-<tr><td><font color=red>16</font></td><td><font color=red>zunko</font></td><td><font color=red><b>クレープといったら、ガレットですよね！　元になったのは、蕎麦粉で作った薄いパンケーキのガレットという料理らしいですよ♪　って、気づいたらもうこんな時間！妹とずんだ餅を食べにいく約束だったんです！Tetsuroさん、4分24秒という短い間でしたが、お話しできて楽しかったです♪ありがとうございました！</b></font></td></tr>
+<h1>teamzunko 1回目</h1>
+
+<table class="table table-striped table-bordered">
+<tr><th>発話者</th><th>発話</th><th>評価<div class="graph">    <span class="bar_good" style="width: 33.3%;">Good</span>    <span class="bar_middle" style="width: 33.3%;">△</span>    <span class="bar_bad" style="width: 33.3%;">Bad</span></div></th></tr><tr><td>U</td><td>/start</td><td></td></tr>
+<tr><td>S</td><td>Tetsuroさん、おはようございます！　　ずん子と申します。ずんだ餅を世界中に広めるため活動しています！最近、料理を勉強しているのですが、あなたの好きな料理はなんですか？</td><td><div class="graph">    <span class="bar_good" style="width: 86.5%;">86.5%</span>    <span class="bar_middle" style="width: 11.4%;">11.4%</span>    <span class="bar_bad" style="width: 2.1%;">2.1%</span></div></td></tr>
+<tr><td>U</td><td>オムライスが好きです</td><td></td></tr>
+<tr><td>S</td><td>オムライスといったら、洋食ですよね！　オムライスは、調理済みの米飯を鶏卵でオムレツのように包んだ日本の洋食らしいですよ♪</td><td><div class="graph">    <span class="bar_good" style="width: 81.2%;">81.2%</span>    <span class="bar_middle" style="width: 13.6%;">13.6%</span>    <span class="bar_bad" style="width: 5.2%;">5.2%</span></div></td></tr>
+<tr><td>U</td><td>へー和食なんですね、知らなかった</td><td></td></tr>
+<tr><td>S</td><td>和食といえば、煮切りですよね！　煮切ったものは「煮切りみりん」「煮切り酒」とも呼ばれ、いずれも主に和食で使われらしいですよ♪</td><td><div class="graph">    <span class="bar_good" style="width: 48.4%;">48.4%</span>    <span class="bar_middle" style="width: 31.6%;">31.6%</span>    <span class="bar_bad" style="width: 20.0%;">20.0%</span></div></td></tr>
+<tr><td>U</td><td>そうですね、みりんはアルコールとばさないとですよね</td><td></td></tr>
+<tr><td>S</td><td>みりんといえば、桜飯って知ってますか？　研いだ米に醤油、塩、酒、みりん、出汁などを加え炊き上げたものらしいですよ♪</td><td><div class="graph">    <span class="bar_good" style="width: 51.6%;">51.6%</span>    <span class="bar_middle" style="width: 33.7%;">33.7%</span>    <span class="bar_bad" style="width: 14.7%;">14.7%</span></div></td></tr>
+<tr><td>U</td><td>初めて知りました。なんで桜ってつくんでしょうね</td><td></td></tr>
+<tr><td>S</td><td>ましといえば、突然ですが、ここでクイズです！ことわざで、つまらない物でも無いよりはましだ、ということを「何も山の賑わい」というでしょう?</td><td><div class="graph">    <span class="bar_good" style="width: 7.5%;">7.5%</span>    <span class="bar_middle" style="width: 22.6%;">22.6%</span>    <span class="bar_bad" style="width: 69.9%;">69.9%</span></div></td></tr>
+<tr><td>U</td><td>わかりません</td><td></td></tr>
+<tr><td>S</td><td>正解は〜〜、「枯れ木」です！</td><td><div class="graph">    <span class="bar_good" style="width: 58.5%;">58.5%</span>    <span class="bar_middle" style="width: 30.9%;">30.9%</span>    <span class="bar_bad" style="width: 10.6%;">10.6%</span></div></td></tr>
+<tr><td>U</td><td>へーそうなんだ</td><td></td></tr>
+<tr><td>S</td><td>カラオケ行こうぜ</td><td><div class="graph">    <span class="bar_good" style="width: 23.4%;">23.4%</span>    <span class="bar_middle" style="width: 31.9%;">31.9%</span>    <span class="bar_bad" style="width: 44.7%;">44.7%</span></div></td></tr>
+<tr><td>U</td><td>えー突然ですね</td><td></td></tr>
+<tr><td>S</td><td>え、まじで行きたいですよね!何歌うんですか?</td><td><div class="graph">    <span class="bar_good" style="width: 46.8%;">46.8%</span>    <span class="bar_middle" style="width: 26.6%;">26.6%</span>    <span class="bar_bad" style="width: 26.6%;">26.6%</span></div></td></tr>
+<tr><td>U</td><td>私は歌は下手なんです</td><td></td></tr>
+<tr><td>S</td><td>下手といえば、突然ですが、ここでクイズです！下手にもかかわらず、やみくもに熱心な人を、「下手の何」というでしょう?</td><td><div class="graph">    <span class="bar_good" style="width: 21.5%;">21.5%</span>    <span class="bar_middle" style="width: 32.3%;">32.3%</span>    <span class="bar_bad" style="width: 46.2%;">46.2%</span></div></td></tr>
+<tr><td>U</td><td>うーん、ヒントはありますか</td><td></td></tr>
+<tr><td>S</td><td>正解は〜〜、「横好き」です！</td><td><div class="graph">    <span class="bar_good" style="width: 11.8%;">11.8%</span>    <span class="bar_middle" style="width: 19.4%;">19.4%</span>    <span class="bar_bad" style="width: 68.8%;">68.8%</span></div></td></tr>
+<tr><td>U</td><td>そうですか</td><td></td></tr>
+<tr><td>S</td><td>小遣いで土産買ってきますね。</td><td><div class="graph">    <span class="bar_good" style="width: 10.8%;">10.8%</span>    <span class="bar_middle" style="width: 33.3%;">33.3%</span>    <span class="bar_bad" style="width: 55.9%;">55.9%</span></div></td></tr>
+<tr><td>U</td><td>お土産何にするんですか</td><td></td></tr>
+<tr><td>S</td><td>土産買ってきて。</td><td><div class="graph">    <span class="bar_good" style="width: 12.0%;">12.0%</span>    <span class="bar_middle" style="width: 20.6%;">20.6%</span>    <span class="bar_bad" style="width: 67.4%;">67.4%</span></div></td></tr>
+<tr><td>U</td><td>えー私が買ってくるんですか</td><td></td></tr>
+<tr><td>S</td><td>私に渡して！...あっ！</td><td><div class="graph">    <span class="bar_good" style="width: 31.9%;">31.9%</span>    <span class="bar_middle" style="width: 30.7%;">30.7%</span>    <span class="bar_bad" style="width: 37.4%;">37.4%</span></div></td></tr>
+<tr><td>U</td><td>どうしたんですか</td><td></td></tr>
+<tr><td>S</td><td>明日の朝からケーキ買って帰る</td><td><div class="graph">    <span class="bar_good" style="width: 16.5%;">16.5%</span>    <span class="bar_middle" style="width: 29.7%;">29.7%</span>    <span class="bar_bad" style="width: 53.8%;">53.8%</span></div></td></tr>
+<tr><td>U</td><td>私もケーキ好きですよ</td><td></td></tr>
+<tr><td>S</td><td>ケーキといえば、ミル・クレープですよね！　ミル・クレープは、ケーキの一種らしいですよ♪</td><td><div class="graph">    <span class="bar_good" style="width: 54.9%;">54.9%</span>    <span class="bar_middle" style="width: 29.7%;">29.7%</span>    <span class="bar_bad" style="width: 15.4%;">15.4%</span></div></td></tr>
+<tr><td>U</td><td>そうなんですか、ミルクレープも好きです</td><td></td></tr>
+<tr><td>S</td><td>クレープといったら、ガレットですよね！　元になったのは、蕎麦粉で作った薄いパンケーキのガレットという料理らしいですよ♪　って、気づいたらもうこんな時間！妹とずんだ餅を食べにいく約束だったんです！Tetsuroさん、4分24秒という短い間でしたが、お話しできて楽しかったです♪ありがとうございました！</td><td><div class="graph">    <span class="bar_good" style="width: 40.2%;">40.2%</span>    <span class="bar_middle" style="width: 37.0%;">37.0%</span>    <span class="bar_bad" style="width: 22.8%;">22.8%</span></div></td></tr>
 </table>
 </div>
 </body>

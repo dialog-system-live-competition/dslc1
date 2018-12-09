@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>対話システムライブコンペティション</title>
-<meta name="Description" content="対話システムライブコンペティションのページです" />
-<meta name="Keywords" content="対話システムライブコンペティション,対話システムライブコンペ,ライブコンペ,対話システム,対話,雑談" />
-<link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" type="img/x-icon" href="http://saetl.net/favicon.ico" />
-<link rel="stylesheet" href="../css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster' rel='stylesheet' type='text/css'><!--googlewebフォント-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!--アイコンwebフォント-->
-<link rel="stylesheet" href="../css/vertical-responsive-menu.css" /><!--レスポンシブメニュー-->
-<link rel="stylesheet" href="../css/twilight.css"><!--スライドショー-->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-</head>
 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>対話システムライブコンペティション</title>
+    <meta name="Description" content="対話システムライブコンペティションのページです" />
+    <meta name="Keywords" content="対話システムライブコンペティション,対話システムライブコンペ,ライブコンペ,対話システム,対話,雑談" />
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster' rel='stylesheet' type='text/css'><!--googlewebフォント-->
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <link href="../css/chart.css" rel="stylesheet">
+  </head>
 <body>
-<div class="floating">
-<table>
-<tr><td></td><td>U</td><td>/start</td></tr>
-<tr><td><font color=red>1</font></td><td><font color=red>zunko</font></td><td><font color=red><b>Tetsuroさん、おはようございます！　　ずん子と申します。ずんだ餅を世界中に広めるため活動しています！最近、料理を勉強しているのですが、あなたの好きな料理はなんですか？</b></font></td></tr>
-<tr><td></td><td>U</td><td>中華とか</td></tr>
-<tr><td><font color=red>2</font></td><td><font color=red>zunko</font></td><td><font color=red><b>中華は好きでちゅうか！なーんちゃって！</b></font></td></tr>
-<tr><td></td><td>U</td><td>しゃれですか？</td></tr>
-<tr><td><font color=red>3</font></td><td><font color=red>zunko</font></td><td><font color=red><b>今から面白い事言います！下手なしゃれはやめなしゃれ！</b></font></td></tr>
-<tr><td></td><td>U</td><td>またしゃれじゃないですか</td></tr>
-<tr><td><font color=red>4</font></td><td><font color=red>zunko</font></td><td><font color=red><b>お腹空いた時にご飯食べて遊んで遊んで遊んで遊びたい</b></font></td></tr>
-<tr><td></td><td>U</td><td>中華の話をしましょう</td></tr>
-<tr><td><font color=red>5</font></td><td><font color=red>zunko</font></td><td><font color=red><b>遊ぶのはご飯食べて遊んで遊ぶのがいいよ!！</b></font></td></tr>
-<tr><td></td><td>U</td><td>遊びもしますけど。中華は好きですか？</td></tr>
-<tr><td><font color=red>6</font></td><td><font color=red>zunko</font></td><td><font color=red><b>好きといえば、突然ですが、ここでクイズです！犬が好きな人は「愛犬家」といますが、猫が好きな人のことは「何家」というでしょう?</b></font></td></tr>
-<tr><td></td><td>U</td><td>愛猫家</td></tr>
-<tr><td><font color=red>7</font></td><td><font color=red>zunko</font></td><td><font color=red><b>正解は〜〜、「愛猫家」です！おめでとうございます！</b></font></td></tr>
-<tr><td></td><td>U</td><td>何かもらえる？</td></tr>
-<tr><td><font color=red>8</font></td><td><font color=red>zunko</font></td><td><font color=red><b>高めのラーメン食べてきましたありがとうございます！</b></font></td></tr>
-<tr><td></td><td>U</td><td>私も食べたいです。どこで食べましたか？</td></tr>
-<tr><td><font color=red>9</font></td><td><font color=red>zunko</font></td><td><font color=red><b>ましといえば、突然ですが、ここでクイズです！ことわざで、つまらない物でも無いよりはましだ、ということを「何も山の賑わい」というでしょう?</b></font></td></tr>
-<tr><td></td><td>U</td><td>枯れ木？</td></tr>
-<tr><td><font color=red>10</font></td><td><font color=red>zunko</font></td><td><font color=red><b>正解は〜〜、「枯れ木」です！おめでとうございます！</b></font></td></tr>
-<tr><td></td><td>U</td><td>やったー</td></tr>
-<tr><td><font color=red>11</font></td><td><font color=red>zunko</font></td><td><font color=red><b>地道にして、水飲んで、肩を揉んでやれよ。</b></font></td></tr>
-<tr><td></td><td>U</td><td>どういう意味ですか？</td></tr>
-<tr><td><font color=red>12</font></td><td><font color=red>zunko</font></td><td><font color=red><b>肩凝ったことないんだよなぁ</b></font></td></tr>
-<tr><td></td><td>U</td><td>肩</td></tr>
-<tr><td><font color=red>13</font></td><td><font color=red>zunko</font></td><td><font color=red><b>それもありますよね揉み揉みしてあげたい！</b></font></td></tr>
-<tr><td></td><td>U</td><td>肩ないんですか？</td></tr>
-<tr><td><font color=red>14</font></td><td><font color=red>zunko</font></td><td><font color=red><b>肩は凝ってないんだよ、、、マヨネーズは揉んであげたい！</b></font></td></tr>
-<tr><td></td><td>U</td><td>マヨネーズは嫌いです</td></tr>
-<tr><td><font color=red>15</font></td><td><font color=red>zunko</font></td><td><font color=red><b>マヨネーズといえば、サラダは美味しいですよね！　生のままの野菜や、ポテト、ブロッコリー、豆類などの煮たものを冷ましてから盛り合わせ、マヨネーズ、サラダドレッシング、塩等をかけて食べるものが一般的だが、野菜以外の材料を多く含む卵サラダ、ツナサラダ、ハムサラダ、マカロニサラダなどもサラダと称されらしいですよ♪</b></font></td></tr>
-<tr><td></td><td>U</td><td>サラダにマヨネーズはつけないです</td></tr>
-<tr><td><font color=red>16</font></td><td><font color=red>zunko</font></td><td><font color=red><b>サラダといえば、ヴィネグレットソースですよね！　ヴィネグレットソースは冷たいソースの一種でサラダに使われることが多いらしいですよ♪　って、気づいたらもうこんな時間！妹とずんだ餅を食べにいく約束だったんです！Tetsuroさん、2分57秒という短い間でしたが、お話しできて楽しかったです♪ありがとうございました！</b></font></td></tr>
+<h1>teamzunko 1回目</h1>
+
+<table class="table table-striped table-bordered">
+<tr><th>発話者</th><th>発話</th><th>評価<div class="graph">    <span class="bar_good" style="width: 33.3%;">Good</span>    <span class="bar_middle" style="width: 33.3%;">△</span>    <span class="bar_bad" style="width: 33.3%;">Bad</span></div></th></tr><tr><td>U</td><td>/start</td><td></td></tr>
+<tr><td>S</td><td>Tetsuroさん、おはようございます！　　ずん子と申します。ずんだ餅を世界中に広めるため活動しています！最近、料理を勉強しているのですが、あなたの好きな料理はなんですか？</td><td><div class="graph">    <span class="bar_good" style="width: 83.5%;">83.5%</span>    <span class="bar_middle" style="width: 12.1%;">12.1%</span>    <span class="bar_bad" style="width: 4.4%;">4.4%</span></div></td></tr>
+<tr><td>U</td><td>中華とか</td><td></td></tr>
+<tr><td>S</td><td>中華は好きでちゅうか！なーんちゃって！</td><td><div class="graph">    <span class="bar_good" style="width: 77.8%;">77.8%</span>    <span class="bar_middle" style="width: 16.6%;">16.6%</span>    <span class="bar_bad" style="width: 5.6%;">5.6%</span></div></td></tr>
+<tr><td>U</td><td>しゃれですか？</td><td></td></tr>
+<tr><td>S</td><td>今から面白い事言います！下手なしゃれはやめなしゃれ！</td><td><div class="graph">    <span class="bar_good" style="width: 48.4%;">48.4%</span>    <span class="bar_middle" style="width: 32.9%;">32.9%</span>    <span class="bar_bad" style="width: 18.7%;">18.7%</span></div></td></tr>
+<tr><td>U</td><td>またしゃれじゃないですか</td><td></td></tr>
+<tr><td>S</td><td>お腹空いた時にご飯食べて遊んで遊んで遊んで遊びたい</td><td><div class="graph">    <span class="bar_good" style="width: 8.9%;">8.9%</span>    <span class="bar_middle" style="width: 27.8%;">27.8%</span>    <span class="bar_bad" style="width: 63.3%;">63.3%</span></div></td></tr>
+<tr><td>U</td><td>中華の話をしましょう</td><td></td></tr>
+<tr><td>S</td><td>遊ぶのはご飯食べて遊んで遊ぶのがいいよ!！</td><td><div class="graph">    <span class="bar_good" style="width: 5.6%;">5.6%</span>    <span class="bar_middle" style="width: 10.0%;">10.0%</span>    <span class="bar_bad" style="width: 84.4%;">84.4%</span></div></td></tr>
+<tr><td>U</td><td>遊びもしますけど。中華は好きですか？</td><td></td></tr>
+<tr><td>S</td><td>好きといえば、突然ですが、ここでクイズです！犬が好きな人は「愛犬家」といますが、猫が好きな人のことは「何家」というでしょう?</td><td><div class="graph">    <span class="bar_good" style="width: 16.7%;">16.7%</span>    <span class="bar_middle" style="width: 40.0%;">40.0%</span>    <span class="bar_bad" style="width: 43.3%;">43.3%</span></div></td></tr>
+<tr><td>U</td><td>愛猫家</td><td></td></tr>
+<tr><td>S</td><td>正解は〜〜、「愛猫家」です！おめでとうございます！</td><td><div class="graph">    <span class="bar_good" style="width: 76.4%;">76.4%</span>    <span class="bar_middle" style="width: 20.2%;">20.2%</span>    <span class="bar_bad" style="width: 3.4%;">3.4%</span></div></td></tr>
+<tr><td>U</td><td>何かもらえる？</td><td></td></tr>
+<tr><td>S</td><td>高めのラーメン食べてきましたありがとうございます！</td><td><div class="graph">    <span class="bar_good" style="width: 5.6%;">5.6%</span>    <span class="bar_middle" style="width: 13.5%;">13.5%</span>    <span class="bar_bad" style="width: 80.9%;">80.9%</span></div></td></tr>
+<tr><td>U</td><td>私も食べたいです。どこで食べましたか？</td><td></td></tr>
+<tr><td>S</td><td>ましといえば、突然ですが、ここでクイズです！ことわざで、つまらない物でも無いよりはましだ、ということを「何も山の賑わい」というでしょう?</td><td><div class="graph">    <span class="bar_good" style="width: 6.7%;">6.7%</span>    <span class="bar_middle" style="width: 25.5%;">25.5%</span>    <span class="bar_bad" style="width: 67.8%;">67.8%</span></div></td></tr>
+<tr><td>U</td><td>枯れ木？</td><td></td></tr>
+<tr><td>S</td><td>正解は〜〜、「枯れ木」です！おめでとうございます！</td><td><div class="graph">    <span class="bar_good" style="width: 71.1%;">71.1%</span>    <span class="bar_middle" style="width: 20.0%;">20.0%</span>    <span class="bar_bad" style="width: 8.9%;">8.9%</span></div></td></tr>
+<tr><td>U</td><td>やったー</td><td></td></tr>
+<tr><td>S</td><td>地道にして、水飲んで、肩を揉んでやれよ。</td><td><div class="graph">    <span class="bar_good" style="width: 2.3%;">2.3%</span>    <span class="bar_middle" style="width: 14.0%;">14.0%</span>    <span class="bar_bad" style="width: 83.7%;">83.7%</span></div></td></tr>
+<tr><td>U</td><td>どういう意味ですか？</td><td></td></tr>
+<tr><td>S</td><td>肩凝ったことないんだよなぁ</td><td><div class="graph">    <span class="bar_good" style="width: 3.4%;">3.4%</span>    <span class="bar_middle" style="width: 13.8%;">13.8%</span>    <span class="bar_bad" style="width: 82.8%;">82.8%</span></div></td></tr>
+<tr><td>U</td><td>肩</td><td></td></tr>
+<tr><td>S</td><td>それもありますよね揉み揉みしてあげたい！</td><td><div class="graph">    <span class="bar_good" style="width: 11.4%;">11.4%</span>    <span class="bar_middle" style="width: 30.6%;">30.6%</span>    <span class="bar_bad" style="width: 58.0%;">58.0%</span></div></td></tr>
+<tr><td>U</td><td>肩ないんですか？</td><td></td></tr>
+<tr><td>S</td><td>肩は凝ってないんだよ、、、マヨネーズは揉んであげたい！</td><td><div class="graph">    <span class="bar_good" style="width: 14.8%;">14.8%</span>    <span class="bar_middle" style="width: 25.0%;">25.0%</span>    <span class="bar_bad" style="width: 60.2%;">60.2%</span></div></td></tr>
+<tr><td>U</td><td>マヨネーズは嫌いです</td><td></td></tr>
+<tr><td>S</td><td>マヨネーズといえば、サラダは美味しいですよね！　生のままの野菜や、ポテト、ブロッコリー、豆類などの煮たものを冷ましてから盛り合わせ、マヨネーズ、サラダドレッシング、塩等をかけて食べるものが一般的だが、野菜以外の材料を多く含む卵サラダ、ツナサラダ、ハムサラダ、マカロニサラダなどもサラダと称されらしいですよ♪</td><td><div class="graph">    <span class="bar_good" style="width: 18.2%;">18.2%</span>    <span class="bar_middle" style="width: 28.4%;">28.4%</span>    <span class="bar_bad" style="width: 53.4%;">53.4%</span></div></td></tr>
+<tr><td>U</td><td>サラダにマヨネーズはつけないです</td><td></td></tr>
+<tr><td>S</td><td>サラダといえば、ヴィネグレットソースですよね！　ヴィネグレットソースは冷たいソースの一種でサラダに使われることが多いらしいですよ♪　って、気づいたらもうこんな時間！妹とずんだ餅を食べにいく約束だったんです！Tetsuroさん、2分57秒という短い間でしたが、お話しできて楽しかったです♪ありがとうございました！</td><td><div class="graph">    <span class="bar_good" style="width: 17.0%;">17.0%</span>    <span class="bar_middle" style="width: 31.9%;">31.9%</span>    <span class="bar_bad" style="width: 51.1%;">51.1%</span></div></td></tr>
 </table>
 </div>
 </body>
