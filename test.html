@@ -17,6 +17,15 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+
+<!-- BootstrapのCSS読み込み -->
+<link href="dialog_log/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="dialog_log/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
@@ -100,7 +109,30 @@
     <article>
       <section>
 
-	<h3>対話ログ</h3>
+
+	<h2>結果</h2>
+	
+	それぞれのシステムにおいて，異なる対話者との 2回の対話を行ない，
+	その対話の内容を対話システムシンポジウム2018の参加者(約100名)によって評価しました．
+	評価は「このシステムと話したいですか？」という問いに対して，
+	「非常にそう思う：1点」から「まったくそう思わない：5点」までの5段階評価により
+	行ない，その評価値の平均値をシステムのスコアとしました．
+
+
+	<div>
+	<table class="table table-bordered">
+	  <tr><th>順位</th><th>チーム名</th><th>スコア</th></tr>
+	  <tr><td>1</td><td>NTTCS</td><td>2.81</td></tr>
+	  <tr><td>2</td><td>NTTdocomo</td><td>3.06</td></tr>
+	  <tr><td>3</td><td>teamzunko</td><td>3.48</td></tr>
+	</table>
+	</div>
+
+
+	<h2>対話ログ</h2>
+
+	それぞれの対話ログを以下に掲載します．
+
 	<div class="linkstr"><a href=dialog_log/mariko1.html>NTTdocomo 1回目</a></div>
 	<div class="linkstr"><a href=dialog_log/mariko2.html>NTTdocomo 2回目</a></div>
 	<div class="linkstr"><a href=dialog_log/trip1.html>NTTCS 1回目</a></div>
