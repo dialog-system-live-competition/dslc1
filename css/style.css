@@ -173,7 +173,7 @@ article li, p {
 }
 .ta th, td {
 	border: none; /*境界線の一括指定(noneはなし)*/
-	padding: 0 0 10px 10px; /*ボックス内側の余白*/
+	padding: 0 0 0 0; /*ボックス内側の余白*/
 	color: #333; /*文字色指定*/
 	font-size: 1.3em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
@@ -397,9 +397,30 @@ div.linkstr {
     /* width:90%; */
     /* height:100%; */
     margin:0 auto;
+    text-decoration-line:underline;
+    color:blue;
     /* background:#FFFFFF; */
     /* border-left:#CCCCCC 1px solid; */
     /* border-right:#CCCCCC 1px solid; */
-    padding:10px 10px 10px 10px;
+    /* padding:10px 10px 10px 10px; */
 }
 
+div.thank {
+    font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+    margin: 20px 20px 20px 20px; /*ボックス外側の余白*/
+    padding: 20px 20px 20px 20px; /*ボックス内側の余白*/
+    background: #eee; /*背景指定*/
+}
+
+div.result {
+    align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
+    font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+    margin: 20px 20px 20px 50px; /*ボックス外側の余白*/
+    padding: 20px 20px 20px 20px; /*ボックス内側の余白*/
+    background: #eee; /*背景指定*/
+}
+
+div.list {
+    align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
+    margin: 20px 20px 20px 50px; /*ボックス外側の余白*/
+}

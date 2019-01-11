@@ -6,6 +6,14 @@
 <title>対話システムライブコンペティション</title>
 <meta name="Description" content="対話システムライブコンペティションのページです" />
 <meta name="Keywords" content="対話システムライブコンペティション,対話システムライブコンペ,ライブコンペ,対話システム,対話,雑談" />
+
+<!-- BootstrapのCSS読み込み -->
+<link href="dialog_log/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="dialog_log/js/bootstrap.min.js"></script>
+
 <link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" type="img/x-icon" href="http://saetl.net/favicon.ico" />
 <link rel="stylesheet" href="css/style.css">
@@ -17,14 +25,6 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-
-<!-- BootstrapのCSS読み込み -->
-<link href="dialog_log/css/bootstrap.min.css" rel="stylesheet">
-<!-- jQuery読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- BootstrapのJS読み込み -->
-<script src="dialog_log/js/bootstrap.min.js"></script>
-
 
 </head>
 
@@ -107,42 +107,129 @@
 
     <!--ページのメイン部分-->
     <article>
+      <h2>受賞結果</h2>
+
+      <div class="result">
+	<h3>最優秀賞</h3>
+	<ul>
+	  <li>- NTTCS (NTT コミュニケーション科学基礎研究所)</li>
+	</ul>
+	<br>
+	<h3>優秀賞</h3>
+	<ul>
+	  <li>- NTTdocomo (株式会社NTTドコモ)</li>
+	  <li>- teamzunko (東北大学 大学院情報科学研究科)</li>
+	</ul>
+      </div>
+      
+      <h2>スコア</h2>
       <section>
-
-
-	<h2>結果</h2>
-	
-	それぞれのシステムにおいて，異なる対話者との 2回の対話を行ない，
-	その対話の内容を対話システムシンポジウム2018の参加者(約100名)によって評価しました．
-	評価は，システムの16発話からなる対話履歴全体に対して
-	「このシステムと話したいですか？」という質問をし，
-	「非常にそう思う：1点」から「まったくそう思わない：5点」までの5段階評価により
-	行ない，その評価値の平均値をシステムのスコアとしました．
-
+	<ul>
+	  <li>
+	    それぞれのシステムにおいて，異なる対話者との 2回の対話を行ない，
+	    その対話の内容を第9回対話システムシンポジウム(SLUD-84)の参加者によって評価しました．
+	    評価は，システムの16発話からなる対話履歴全体に対して
+	    「このシステムと話したいですか？」という質問をし，
+	    「非常にそう思う：1点」から「まったくそう思わない：5点」までの5段階評価により
+	    行ない，その評価値の平均値をシステムのスコアとしました．
+	  </li>
+	</ul>
 
 	<div>
 	<table class="table table-bordered">
-	  <tr><th>順位</th><th>チーム名</th><th>スコア</th></tr>
-	  <tr><td>1</td><td>NTTCS</td><td>2.81</td></tr>
-	  <tr><td>2</td><td>NTTdocomo</td><td>3.06</td></tr>
-	  <tr><td>3</td><td>teamzunko</td><td>3.48</td></tr>
+	  <tr align=center><th>順位</th><th>チーム名</th><th>評価対象の対話</th><th>スコアの平均値</th><th>評価者の人数</th></tr>
+
+	  <tr><td rowspan=3>1</td><td rowspan=3>NTTCS</td><td>1回目</td> <td align=right>2.69</td><td align=right>97</td></tr>
+	  <tr>			  			  <td>2回目</td> <td align=right>2.93</td><td align=right>99</td></tr>
+	  <tr>			  			  <td>平均値</td><td align=right>2.81</td><td>-</td></tr>
+
+	  <tr><td rowspan=3>2</td><td rowspan=3>NTTdocomo</td><td>1回目</td> <td>3.18</td><td>101</td></tr>
+	  <tr><td>2回目</td> <td>2.95</td><td>101</td></tr>
+	  <tr><td>平均値</td><td>3.06</td><td>-</td></tr>
+
+	  <tr><td rowspan=3>3</td><td rowspan=3>teamzunko</td><td>1回目</td> <td>3.58</td><td>92</td></tr>
+	  <tr><td>2回目</td> <td>3.40</td><td>98</td></tr>
+	  <tr><td>平均値</td><td>3.48</td><td>-</td></tr>
 	</table>
 	</div>
+      </section>
 
 
-	<h2>対話ログ</h2>
+      <h2>対話ログ</h2>
+      <section>
+	<ul>
+	  <li>
+	    それぞれの対話ログを以下に掲載します．
+	    上述した対話履歴に対する5段階評価に加えて，今回は
+	    システム発話のそれぞれについても，Good, Bad, どちらとも言えない(△)の 3段階での
+	    評価を評価者に依頼しました．
+	  </li>
+	  <li>
+	    ライブコンペにおける対話の実施の順序は1回目と2回目それぞれくじで決めました．
+	    また 2回目の対話の対話者もくじにより決めました．
+	    その順序で対話のログを以下のページに掲載します．
+	  </li>
+	</ul>
 
-	それぞれの対話ログを以下に掲載します．
-	上述した対話履歴に対する5段階評価に加えて，今回は
-	システム発話のそれぞれについても，Good, Bad, どちらとも言えない(△)の 3段階での
-	評価を評価者に依頼しました．
+	<table class="table table-bordered">
+	  <tr align=center>
+	    <th>ラウンド</th>
+	    <th>チーム名</th>
+	    <th>対話者</th>
+	  </tr>
 
-	<div class="linkstr"><a href=dialog_log/mariko1.html>NTTdocomo 1回目</a></div>
-	<div class="linkstr"><a href=dialog_log/mariko2.html>NTTdocomo 2回目</a></div>
-	<div class="linkstr"><a href=dialog_log/trip1.html>NTTCS 1回目</a></div>
-	<div class="linkstr"><a href=dialog_log/trip2.html>NTTCS 2回目</a></div>
-	<div class="linkstr"><a href=dialog_log/zunko1.html>teamzunko 1回目</a></div>
-	<div class="linkstr"><a href=dialog_log/zunko2.html>teamzunko 2回目</a></div>
+	  <tr>
+	    <td rowspan=3>1回目</td>
+	    <td><div class="linkstr"><a href=dialog_log/trip1.html>NTTCS</a></div></td>
+	    <td>千葉大学)伝さん</td>
+	  </tr>
+	  <tr>
+	    <td><div class="linkstr"><a href=dialog_log/mariko1.html>NTTdocomo</a></div></td>
+	    <td>千葉大学)伝さん</td>
+	  </tr>
+	  <tr>
+	    <td><div class="linkstr"><a href=dialog_log/zunko1.html>teamzunko</a></div></td>
+	    <td>千葉大学)伝さん</td>
+	  </tr>
+
+
+	  <tr>
+	    <td rowspan=3>2回目</td>
+	    <td><div class="linkstr"><a href=dialog_log/mariko2.html>NTTdocomo</a></div></td>
+	    <td>早稲田大学)藤江さん</td>
+	  </tr>
+	  <tr>
+	    <td><div class="linkstr"><a href=dialog_log/zunko2.html>teamzunko</a></div></td>
+	    <td>東芝)小林さん</td>
+	  </tr>
+	  <tr>
+	    <td><div class="linkstr"><a href=dialog_log/trip2.html>NTTCS</a></div></td>
+	    <td>大阪大学)駒谷さん</td>
+	  </tr>
+
+	</table>
+
+
+      </section>
+
+      
+
+
+      <h2>発表資料</h2>
+      <section>
+	<ul>
+	  <li>
+	    以下に発表資料を発表の順序に掲載します．
+	  </li>
+	</ul>
+	<div class="list">
+	<ul>
+	  <li><div class="linkstr"><a href=docs/SLUD_livecomp_tohoku_univ.pdf>teamzunko</a></div></li>
+	  <li><div class="linkstr"><a href=docs/slud20181121_sugiyama_vf.pdf>NTTCS</a></div></li>
+	  <li><div class="linkstr"><a href=docs/livecomp_mariko_r1.pdf>NTTdocomo</a></div></li>
+	</ul>
+	</div>
+      </section>
 
 
         <!-- <h3>リンク</h3> -->
