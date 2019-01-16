@@ -414,7 +414,7 @@ div.thank {
 
 div.result {
     align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
-    font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+    font-size: 1.2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
     margin: 20px 20px 20px 50px; /*ボックス外側の余白*/
     padding: 20px 20px 20px 20px; /*ボックス内側の余白*/
     background: #eee; /*背景指定*/
